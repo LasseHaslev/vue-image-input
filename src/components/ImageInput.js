@@ -12,7 +12,7 @@ export default {
                     @image-removed="removeImage( index )"
                     :value="value"
                     :images-adaptor="imagesAdaptor"
-                    :name="name + '[]'"
+                    :name="name"
                     :value-adaptor="valueAdaptor"
                 ></image-input-element>
             </div>
