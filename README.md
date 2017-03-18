@@ -1,12 +1,11 @@
-# @lassehaslev/vue-image-picker
-
-> Image picker using [ @lassehaslev/vue-item-picker ](https://github.com/LasseHaslev/vue-item-picker) and [Bulma](http://bulma.io/) styling.
+# @lassehaslev/vue-image-input
+> Image input using [ @lassehaslev/vue-image-picker ](https://github.com/LasseHaslev/vue-image-picker)
 
 #### Under development
 > This package is under development and is not yet safe to use..
 
 ## Installation
-Run ```npm install @lassehaslev/vue-image-picker --save``` in your project folder
+Run ```npm install @lassehaslev/vue-image-input --save``` in your project folder
 
 ## Usage
 This package uses [vue-resource](https://github.com/vuejs/vue-resource), so just make sure you include it.
