@@ -19,6 +19,9 @@ export default {
             <a @click.prevent="selectImage(null)" class="button is-fullwidth is-warning" href="#">Remove image</a>
         </div>
         <image-picker :url="url"
+        :dropzone-url="dropzoneUrl"
+        :dropzone="dropzone"
+        :dropzone-name="dropzoneName"
             :adaptor="imagesAdaptor"
             :selected="selectedImage"
             @confirm="selectImage"

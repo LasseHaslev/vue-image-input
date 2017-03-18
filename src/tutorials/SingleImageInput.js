@@ -12,9 +12,14 @@ export default {
             <section class="hero is-light">
                 <div class="hero-body">
                     <div class="container">
-                        <div class="columns is-mobile">
+                        <div class="columns is-mobile is-multiline">
                             <div class="column is-2 is-offset-5">
-                                <image-input url="https://jsonplaceholder.typicode.com/photos?limit=10" :value="image" name="image" :images-adaptor="imageAdaptor" :value-adaptor="valueAdaptor"></image-input>
+                        <image-input
+                        :dropzone="true"
+                        url="http://localhost:1337/api/images"
+                        :values="images" name="images"
+                        :images-adaptor="imageAdaptor"
+                        :value-adaptor="valueAdaptor"></image-input>
                             </div>
                         </div>
                     </div>
@@ -25,19 +30,15 @@ export default {
 
     data() {
         return {
-            image: {
-                id: 10,
-                thumbnailUrl: "http://placehold.it/150/92c952",
-                title: "accusamus beatae ad facilis cum similique qui sunt",
-                url: "http://placehold.it/600/92c952",
-            }
+            image: null,
         }
     },
 
     methods: {
         imageAdaptor( images ) {
+            console.log(images);
             // return images;
-            return images.slice( 0, 20 );
+            return images.data;
         },
         valueAdaptor( value ) {
             return value.id;

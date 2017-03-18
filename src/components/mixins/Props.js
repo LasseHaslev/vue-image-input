@@ -1,7 +1,8 @@
-import ImagePickerProps from './ImagePickerProps';
+import { Props } from '@lassehaslev/vue-image-picker';
+import { DropzoneProps } from '@lassehaslev/vue-image-picker';
 export default {
 
-    mixins: [ ImagePickerProps ],
+    mixins: [ Props, DropzoneProps ],
      
     props: {
         'images-adaptor': {
